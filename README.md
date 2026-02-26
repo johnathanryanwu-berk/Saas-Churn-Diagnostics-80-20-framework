@@ -112,4 +112,4 @@ Reducing non-activation by 30% reduces overall churn by ~13%, with disproportion
 
 This case demonstrates structured problem-solving in a real-world churn crisis scenario.
 
-Rather than building a predictive model, the focus was identifying the highest-leverage operational control point — resulting in a clear, quantifiable business recommendation.
+Rather than building a predictive model, the focus was identifying the highest-leverage operational control point, resulting in a clear, quantifiable business recommendation.
