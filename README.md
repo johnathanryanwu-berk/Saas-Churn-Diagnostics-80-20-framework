@@ -14,7 +14,7 @@
 
 ---
 
-## Executive Summary
+# Executive Summary
 
 In Q3, BizGrow’s churn increased from 4% to 12%.
 
