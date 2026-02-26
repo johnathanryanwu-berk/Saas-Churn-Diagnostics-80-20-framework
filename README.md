@@ -1,5 +1,17 @@
 # SaaS Churn Crisis Diagnosis (80/20 Framework)
 
+## Table of Contents
+- Executive Summary
+- Business Context
+- Analytical Framework
+- Data Description
+- Data Dictionary
+- Hypothesis Testing
+- Business Impact
+- Final Recommendation
+- Data Dictionary
+- How to Run
+
 ## Executive Summary
 
 In Q3, BizGrow’s churn increased from 4% to 12%.
@@ -39,6 +51,40 @@ The project follows a structured 80/20 diagnostic methodology:
 3. 80/20 churn concentration analysis  
 4. Hypothesis testing (H1–H4)  
 5. Business impact modeling  
+
+---
+
+## Data Description
+
+The analysis combines contract data, product usage logs, and support tickets into a unified customer-level master dataset (`df_master_A`).
+
+## Data Dictionary
+
+| Column Name              | Description | Type | Notes |
+|--------------------------|------------|------|-------|
+| customer_id              | Unique identifier for each customer | string | Primary key |
+| company_name             | Name of the customer company | string | Informational only |
+| country                  | Customer’s country of operation | categorical | Geographic attribute |
+| region                   | Broader geographic region (e.g., North America, Europe) | categorical | Used for market saturation hypothesis |
+| is_eu                    | Indicator if customer is located in EU | integer (0/1) | Regional classification flag |
+| industry                 | Customer’s industry segment | categorical | Used for segmentation analysis |
+| company_size_bucket      | Company size category | categorical | e.g., "1-10", "11-50" |
+| annual_contract_value    | Annual contract revenue from customer | float | Revenue metric |
+| product_tier             | Subscription product tier | categorical | Pricing plan segment |
+| sales_segment            | Internal sales classification | categorical | Enterprise / SMB etc. |
+| acquisition_channel      | Channel through which customer was acquired | categorical | Marketing attribution |
+| contract_start_date      | Contract start date | datetime | Used to compute tenure |
+| contract_end_date        | Contract end date | datetime | Defines churn window |
+| renewed_flag             | Indicator if contract was renewed | integer (0/1) | Alternative retention signal |
+| discount_pct             | Discount percentage applied to contract | float | Pricing sensitivity proxy |
+| initial_onboarding_score | Quality score assigned during onboarding | float | Higher = better onboarding |
+| is_churned               | Whether customer churned during analysis period (1 = churned, 0 = retained) | integer (0/1) | Target variable |
+| total_logins             | Total number of login events during analysis period | float | Engagement metric |
+| total_sessions           | Total number of usage sessions | float | Engagement intensity proxy |
+| total_tickets            | Number of support tickets submitted | float | Support interaction metric |
+| avg_resolution_hours     | Average time to resolve support tickets | float | Support quality proxy |
+| never_logged_in          | Indicator if customer never activated (no logins) | boolean | Derived feature |
+| small_company            | Indicator for small companies (1–10 employees) | boolean | Derived segmentation flag |
 
 ---
 
@@ -113,3 +159,22 @@ Reducing non-activation by 30% reduces overall churn by ~13%, with disproportion
 This case demonstrates structured problem-solving in a real-world churn crisis scenario.
 
 Rather than building a predictive model, the focus was identifying the highest-leverage operational control point, resulting in a clear, quantifiable business recommendation.
+
+---
+
+
+
+---
+
+## How to Run
+
+1. Clone the repository
+2. Install dependencies:
+
+pip install -r requirements.txt
+
+3. Open the notebook:
+
+Saas_Churn_80_20_diagnosis.ipynb
+
+4. Run all cells
