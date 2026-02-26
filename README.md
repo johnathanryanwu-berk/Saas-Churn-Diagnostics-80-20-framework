@@ -112,40 +112,40 @@ Churn is structurally driven by customers who:
 - Have weaker onboarding quality
 
 ---
-## Visual Summary of Key Findings
+## Evidence & Visual Diagnostics
 
 ### 1. 80/20 Churn Concentration
-Shows the degree to which churn is concentrated among a small segment of customers.
+Churn is heavily concentrated among a small segment of customers.
 
-<img src="images/pareto.png" width="700">
+<img src="Images/pareto.png" width="800">
 
 ---
 
 ### 2. H1: Engagement & Churn
-Tests whether dashboard engagement relates to churn.
+Low engagement customers churn at dramatically higher rates.
 
-<img src="images/h1_engagement.png" width="700">
-
----
-
-### 3. H2: Regional Churn Comparison
-Tests whether churn differs across regions.
-
-<img src="images/h2_region.png" width="700">
+<img src="Images/h1_engagement.png" width="800">
 
 ---
 
-### 4. H3: Support Impact on Churn
-Tests whether customers with more support tickets churn more.
+### 3. H2: Regional Comparison
+Churn rates are nearly identical across regions.
 
-<img src="images/h3_support.png" width="700">
+<img src="Images/h2_region.png" width="800">
 
 ---
 
-### 5. H4: Quality Score vs Churn (Primary Driver)
-Shows churn rate by derived customer quality score — the strongest structural driver.
+### 4. H3: Support Ticket Volume
+Support volume has modest correlation with churn.
 
-<img src="images/h4_quality.png" width="700">
+<img src="Images/h3_support.png" width="800">
+
+---
+
+### 5. H4: Customer Quality Score (Primary Driver)
+Low-quality acquisition strongly predicts churn.
+
+<img src="Images/h4_quality.png" width="800">
 
 ---
 
