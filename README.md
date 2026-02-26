@@ -114,35 +114,35 @@ Churn is structurally driven by customers who:
 ---
 ## Evidence & Visual Diagnostics
 
-### 1. 80/20 Churn Concentration
+### 80/20 Churn Concentration
 Churn is heavily concentrated among a small segment of customers.
 
 <img src="Images/pareto.png" width="800">
 
 ---
 
-### 2. H1: Engagement & Churn
+### H1: Engagement & Churn
 Low engagement customers churn at dramatically higher rates.
 
 <img src="Images/h1_engagement.png" width="800">
 
 ---
 
-### 3. H2: Regional Comparison
+### H2: Regional Comparison
 Churn rates are nearly identical across regions.
 
 <img src="Images/h2_region.png" width="800">
 
 ---
 
-### 4. H3: Support Ticket Volume
+### H3: Support Ticket Volume
 Support volume has modest correlation with churn.
 
 <img src="Images/h3_support.png" width="800">
 
 ---
 
-### 5. H4: Customer Quality Score (Primary Driver)
+### H4: Customer Quality Score (Primary Driver)
 Low-quality acquisition strongly predicts churn.
 
 <img src="Images/h4_quality.png" width="800">
