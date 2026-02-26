@@ -164,19 +164,14 @@ Rather than building a predictive model, the focus was identifying the highest-l
 
 ---
 
-
-
----
-
 ## How to Run
 
-1. Clone the repository
-2. Install dependencies:
+1. Clone the repository  
+2. Open `Saas_Churn_80_20_diagnosis.ipynb` in Jupyter Notebook or VS Code  
+3. Run all cells from top to bottom  
 
-pip install -r requirements.txt
-
-3. Open the notebook:
-
-Saas_Churn_80_20_diagnosis.ipynb
-
-4. Run all cells
+Required libraries:
+- pandas
+- numpy
+- matplotlib
+- seaborn
